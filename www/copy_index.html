@@ -12,7 +12,6 @@
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">    
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/generos.css">
   <script type="text/javascript" src="components/acao.js"></script>
 
 <script type="text/javascript">//<![CDATA[
@@ -31,28 +30,28 @@ $(document).ready(function() {
         <h2>CALCULANDO O</h2>
         <h1>METABOLISMO</h1>
         
-        <div class="box">
-    <br>
-<p>SELECIONE SEU GENERO</p>
- <label>
-  <input type="radio"  name="gender" id="genero" value="M">
-  <span class="homem waves-effect waves-light"><img class="sexo" src="img/man.svg"></span> 
- </label>
- <label>
-  <input type="radio" name="gender" id="genero" value="F">
-  <span class="mulher waves-effect waves-light"><img class="sexo" src="img/woman.svg"></span> 
- </label>
-  <!-- -->
-</div>
+        <div stye class="generos">
+          <h2 style="font-size: 20px;color: gray;">SELECIONE O SEU GENERO</h2>
+          <button id="gente" class="mano waves-effect waves-light" type="button" value="M">
+            <img class="sexo" src="img/man.svg">
+            <h5>Homem</h5>
+          </button>
+          <button id="gente" class="mulhe waves-effect waves-light" type="button" value="F">
+            <img class="sexo" src="img/woman.svg">
+            <h5>Mulher</h5>
+          </button>
+          <p></p>
+        </div>
 
         <label for="inp" class="inp">
-        <input style="width: 80vw;" type="text" id="peso" class="peso" placeholder="INSIRA SEU PESO">
-        <input style="width: 80vw;" type="text" id="altura" class="altura" placeholder="INSIRA SUA ALTURA">
-        <input style="width: 80vw;" type="text" id="peso" class="idade" placeholder="INSIRA SUA IDADE"> 
+        <input type="text" id="input" id="nome" placeholder="INSIRA SEU NOME">
+        <input type="text" id="input" id="peso" placeholder="INSIRA SEU PESO">
+        <input type="text" id="input" id="altura" placeholder="INSIRA SUA ALTURA">
+        <input type="text" id="input" id="idades" placeholder="INSIRA SUA IDADE"> 
         </label>
-        <div style="width: 80vw;" id="input" class="input-field col s12">
-        <select id="atividade">
-        <option value="">SELECIONE O SEU NIVEL DE ATIVIDADE</option>
+        <div id="input" class="input-field col s12">
+        <select id="inputss">
+        <option value="" disabled selected>SELECIONE O SEU NIVEL DE ATIVIDADE</option>
         <option value="1">Sedentario</option>
         <option value="2">Levemente ativo</option>
         <option value="3">Moderamente ativo</option>
@@ -61,10 +60,6 @@ $(document).ready(function() {
         </select>
         </div>
         <a style="margin-top: 5%;box-shadow:none;" class="waves-effect waves-light btn" id="result">RESULTADO</a>
-        <div  class="div">
-          <h4> el resultad da sua taxa metabolica é: </h4>
-	      <h3 id="resultadoCalc"></h3>
-        </div>
         </center>
     </div>
 </body>
