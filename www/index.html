@@ -9,20 +9,19 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
 
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">    
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">    
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/generos.css">
   <script type="text/javascript" src="components/acao.js"></script>
 
-<script type="text/javascript">//<![CDATA[
-window.onload=function(){
-$(document).ready(function() {
-    $('select').material_select();
-});
-}//]]> 
-
-</script>
+  <script type="text/javascript">
+    window.onload=function(){
+		$(document).ready(function() {
+			$('select').material_select();
+		});
+	} 
+  </script>
 
 </head>
 <body>
@@ -42,22 +41,22 @@ $(document).ready(function() {
   <input type="radio" name="gender" id="genero" value="F">
   <span class="mulher waves-effect waves-light"><img class="sexo" src="img/woman.svg"></span> 
  </label>
-  <!-- -->
+  
 </div>
 
         <label for="inp" class="inp">
         <input style="width: 80vw;" type="text" id="peso" class="peso" placeholder="INSIRA SEU PESO">
         <input style="width: 80vw;" type="text" id="altura" class="altura" placeholder="INSIRA SUA ALTURA">
-        <input style="width: 80vw;" type="text" id="peso" class="idade" placeholder="INSIRA SUA IDADE"> 
+        <input style="width: 80vw;" type="text" id="idade" class="idade" placeholder="INSIRA SUA IDADE"> 
         </label>
         <div style="width: 80vw;" id="input" class="input-field col s12">
         <select id="atividade">
-        <option value="">SELECIONE O SEU NIVEL DE ATIVIDADE</option>
-        <option value="1">Sedentario</option>
-        <option value="2">Levemente ativo</option>
-        <option value="3">Moderamente ativo</option>
-        <option value="4">Altamente ativo</option>
-        <option value="5">Extremamente ativo</option>
+			<option>SELECIONE O SEU NIVEL DE ATIVIDADE</option>
+			<option value="1">Sedentario</option>
+			<option value="2">Levemente ativo</option>
+			<option value="3">Moderamente ativo</option>
+			<option value="4">Altamente ativo</option>
+			<option value="5">Extremamente ativo</option>
         </select>
         </div>
         <a style="margin-top: 5%;box-shadow:none;" class="waves-effect waves-light btn" id="result">RESULTADO</a>
